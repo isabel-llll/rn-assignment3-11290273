@@ -30,3 +30,217 @@ export default function Task() {
         { id: '7', title: 'Relax', tasks: '3 Tasks', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfs6FzGbkuyBt5TCEp0w41v62zNNAPJDWnVg&s' },
         { id: '8', title: 'Sleep', tasks: '3 Tasks', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh5N9VKn2jXCr1JVV4jSa0q6Go2SmQtc8qEw&s' },
       ];
+
+      return (
+        <SafeAreaView style={styles.container}>
+          <ScrollView style={styles.Task}>
+            <View style={styles.Frame1}>
+              <View style={styles.Group1}>
+                <Text style={styles.HelloDevs}>Hello, Isa</Text>
+                <Text style={styles._15TasksToday}>15 tasks today</Text>
+              </View>
+              <Image
+                style={styles.ProfileImage}
+                source={{
+                  uri: "https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/.thumbnails/665cd8e59e8b9f7683d4a2e4/3c7dcead3ac3e9e004d855f8dc3b01763d24f079b7c8c583846cf7c1b0320862/__preview.3000.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T204155Z&X-Amz-Expires=18000&X-Amz-Signature=ba89a1de2f8b8fb05acc98ed19e6466440945af4bbfa2ebdd5b5ace234655776&X-Amz-SignedHeaders=host&response-content-disposition=inline",
+                }}
+              />
+            </View>
+            <View style={styles.Search3}>
+              <View style={styles.SearchBox}>
+                <View style={styles.Group6}>
+                  <View style={styles.Group5}>
+                    <Image
+                      style={styles.MynauiSearch}
+                      source={{
+                        uri: "https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/xhh07t5ygon-1%3A40?alt=media&token=191204d3-2d81-4d4a-bd6a-298b2b1d0c57",
+                      }}
+                    />
+                    <TextInput style={styles.SearchInput} placeholder="Search" />
+                  </View>
+                </View>
+              </View>
+              <Image
+                style={styles.Filter}
+                source={{
+                  uri: "https://firebasestorage.googleapis.com/v0/b/unify-v3-copy.appspot.com/o/xhh07t5ygon-1%3A31?alt=media&token=1f81dcad-6582-43a7-a8e1-5f0c868e2f94",
+                }}
+              />
+            </View>
+            <Text style={styles.Categories}>Categories</Text>
+            <FlatList
+              horizontal
+              data={categories}
+              renderItem={({ item }) => (
+                <View style={styles.CategoriesCard}>
+                  <View style={styles.Group7}>
+                    <Text style={styles.Exercise}>{item.title}</Text>
+                    <Text style={styles._12Tasks}>{item.tasks}</Text>
+                  </View>
+                  <Image
+                    style={styles.CategoryImage}
+                    source={{
+                      uri: item.image,
+                    }}
+                  />
+                </View>
+              )}
+              keyExtractor={item => item.id}
+              style={styles.Group9}
+            />
+            <Text style={styles.OngoingTask}>Ongoing Task</Text>
+            <FlatList
+              data={tasks}
+              renderItem={({ item }) => (
+                <View style={styles.OngoingTasksCards}>
+                  <Text style={styles.TaskTitle}>{item.title}</Text>
+                </View>
+              )}
+              keyExtractor={item => item.id}
+            />
+            <Button title="Add Task" onPress={() => {}} />
+          </ScrollView>
+        </SafeAreaView>
+      );
+    }
+    
+    const styles = StyleSheet.create({
+      container: {
+        flex: 1,
+        backgroundColor: "rgba(247,240,232,1)",
+      },
+      Task: {
+        flex: 1,
+        backgroundColor: "#E7BCDE",
+      },
+      Frame1: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: 20,
+      },
+      Group1: {
+        flexDirection: "column",
+      },
+      HelloDevs: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 32,
+        lineHeight: 32,
+        fontFamily: "Times New Roman",
+        fontWeight: "700",
+      },
+      _15TasksToday: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 12,
+        lineHeight: 12,
+        fontFamily: "Times New Roman",
+        fontWeight: "500",
+      },
+      ProfileImage: {
+        width: 50,
+        height: 50,
+        borderRadius: 25,
+      },
+      Search3: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: 20,
+      },
+      SearchBox: {
+        flex: 1,
+        flexDirection: "row",
+        alignItems: "center",
+        backgroundColor: "rgba(251,249,247,1)",
+        borderRadius: 14,
+        borderWidth: 1,
+        borderColor: "rgba(251,249,247,1)",
+        paddingHorizontal: 10,
+      },
+      Group6: {
+        flexDirection: "row",
+        alignItems: "center",
+      },
+      Group5: {
+        flexDirection: "row",
+        alignItems: "center",
+      },
+      MynauiSearch: {
+        width: 24,
+        height: 24,
+        marginRight: 10,
+      },
+      SearchInput: {
+        fontSize: 16,
+        fontFamily: "Lato, sans-serif",
+        fontWeight: "700",
+        color: "rgba(0,0,0,1)",
+      },
+      Filter: {
+        width: 24,
+        height: 24,
+      },
+      Categories: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 20,
+        lineHeight: 20,
+        fontFamily: "Lato, sans-serif",
+        fontWeight: "700",
+        padding: 20,
+      },
+      Group9: {
+        paddingHorizontal: 20,
+      },
+      CategoriesCard: {
+        marginRight: 10,
+        padding: 16,
+        borderRadius: 15,
+        backgroundColor: "rgba(251,249,247,1)",
+        alignItems: 'center',
+      },
+      Group7: {
+        paddingBottom: 2,
+      },
+      Exercise: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 16,
+        lineHeight: 16,
+        fontFamily: "Times New Roman",
+        fontWeight: "950",
+      },
+      _12Tasks: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 12,
+        lineHeight: 12,
+        fontFamily: "Times New Roman",
+        fontWeight: "400",
+      },
+      CategoryImage: {
+        width: 151,
+        height: 132,
+        marginTop: 10,
+      },
+      OngoingTask: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 20,
+        lineHeight: 20,
+        fontFamily: "Times New Roman",
+        fontWeight: "700",
+        padding: 20,
+      },
+      OngoingTasksCards: {
+        padding: 20,
+        margin: 10,
+        borderRadius: 15,
+        borderWidth: 1,
+        borderColor: "rgba(232,209,186,1)",
+        backgroundColor: "rgba(251,249,247,1)",
+      },
+      TaskTitle: {
+        color: "rgba(0,0,0,1)",
+        fontSize: 16,
+        lineHeight: 16,
+        fontFamily: "Times New Roman",
+        fontWeight: "700",
+      },
+    });
