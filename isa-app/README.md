@@ -1,50 +1,26 @@
-# Welcome to your Expo app 👋
+## STUDENT ID:
+11290273
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Components' Usage
+-- View: It supports layout with Flexbox, some touch handling and accessibility controls.
+-- Text: This is a React component for displaying text.
+-- ScrollView: Essentially just a view component that allows scrolling.
+-- TextInput: A component for inputting text in the application via the keyboard.
+-- Image: A component that allows you to display images.
+-- StyleSheet: It is used to create a set of styles for the components.
+-- Flatlist: It is used to adjust the layout.
+-- Button: It is used to create interactive buttons that users can click to perform an action. 
+-- SafeAreaView: It helps to prevent content from being hidden behind notches, rounded corners, or other screen elements.
 
-## Get started
+##Screenshots
+![Screenshot 1](https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/My%20first%20collection/photo_1_2024-06-02_18-27-44.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T224345Z&X-Amz-Expires=300&X-Amz-Signature=d314b3aba43e52e61c5c3c6dcbf1ac6950629d5d6b24c13554a0a7f41c824c07&X-Amz-SignedHeaders=host&response-content-disposition=665cf59a9e8b9f7683d4a318)
 
-1. Install dependencies
+![Screenshot 2](https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/My%20first%20collection/photo_4_2024-06-02_18-27-44.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T230030Z&X-Amz-Expires=300&X-Amz-Signature=3ec5054edb3da4da83222547ef50ab0123d2856d669148d1f2e38640027f0eb7&X-Amz-SignedHeaders=host&response-content-disposition=665cf9809e8b9f7683d4a31e)
 
-   ```bash
-   npm install
-   ```
+![Screenshot 3](https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/My%20first%20collection/photo_5_2024-06-02_18-27-44.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T225659Z&X-Amz-Expires=300&X-Amz-Signature=a0ef3da1c645ff2d6df74ae0116d436ac535233c48ff73467c44a81c59d2323a&X-Amz-SignedHeaders=host&response-content-disposition=665cf8ac9e8b9f7683d4a31c)
 
-2. Start the app
+![Screenshot 4](https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/.thumbnails/665cf8ac9e8b9f7683d4a31c/fb0a670d3a824ff1cfd475ee49e7cfd299564db14a5c73fcf18e623a9bf95714/__preview.3000.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T230308Z&X-Amz-Expires=18000&X-Amz-Signature=8902942205726f242f490a41a5636be64e3a690584ca4adff46d232b349fcf6b&X-Amz-SignedHeaders=host&response-content-disposition=inline)
 
-   ```bash
-    npx expo start
-   ```
+![Screenshot 5](https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/My%20first%20collection/photo_2_2024-06-02_18-27-44.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T230157Z&X-Amz-Expires=300&X-Amz-Signature=b77d35960af94157e360865e9237edb3432cc86ead057d158da6f1bf2c908407&X-Amz-SignedHeaders=host&response-content-disposition=665cf9d19e8b9f7683d4a320)
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![Screenshot 6](https://picsio-bucket-66279d196b1d4487aa9bf59e-us-east-1.s3.amazonaws.com/My%20first%20collection/photo_6_2024-06-02_18-27-44.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAW5FHSFNI5YBA4FW4%2F20240602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240602T230313Z&X-Amz-Expires=300&X-Amz-Signature=bd5934d0c5230cf04c2aea6c634c7060c092b3db7b23fdac386909eb234e544b&X-Amz-SignedHeaders=host&response-content-disposition=665cfa289e8b9f7683d4a322)
